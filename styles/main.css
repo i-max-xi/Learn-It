@@ -63,10 +63,22 @@ a {
 .hero-section {
   padding: 100px 50px;
   background-image: url(../Assets/bg.jpg);
+  background-size: cover;
+}
+
+.hero-section h1 {
+  background-image: url(../Assets/intro-text-bg.jpg);
+  background-clip: text;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  color: transparent;
+
 }
 
 .welcome {
-  color: orange;
+  color: orangered;
 }
 
 .welcome h1 {
@@ -74,7 +86,7 @@ a {
 }
 
 .mail {
-  background-color: orange;
+  background-color: orangered;
   color: white;
   margin-top: 10px;
   border: none;
@@ -82,14 +94,15 @@ a {
 }
 
 hr {
-  color: orange;
+  color: orangered;
   width: 30%;
 }
 
 .program {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-image: url(../Assets/program-bg.png);
+  background-blend-mode: multiply;
   padding: 30px 10px;
 }
 
@@ -104,16 +117,18 @@ hr {
 }
 
 .program li {
-  background-color: white;
+  background-image: url(../Assets/pale-black.jpg);
   padding: 20px;
   margin-top: 14px;
   display: grid;
   grid-template-columns: 35% 60%;
   gap: 10px;
+  color: white;
+  opacity: 0.8;
 }
 
 .program-head {
-  color: orange;
+  color: orangered;
 }
 
 .icon {
@@ -127,7 +142,7 @@ hr {
   font-size: 18px;
   align-self: center;
   padding: 15px;
-  background: orange;
+  background: orangered;
   border: none;
 }
 
@@ -177,7 +192,7 @@ hr {
   border-top: none;
 }
 .card-header {
-  background-color: orange;
+  background-color: orangered;
   color: white;
   padding: 15px;
 }
@@ -238,25 +253,41 @@ footer {
   nav {
     z-index: 1;
     display: flex;
+    justify-content: space-evenly;
     padding: 30px;
-    justify-content: space-between;
     background-color: white;
     box-shadow: 1px 1px 1px 1px rgba(59, 59, 59, 0.445);
     position: fixed;
     width: 100%;
   }
 
-  .links {
-    transform: translateX(-30px);
+  .logo {
+    transform: translateX(-175px);
   }
 
   nav a {
-    margin-right: 25px;
+    margin-right: 50px;
+    color: black;
+  }
+
+  .support {
+    display: inline;
+    padding: 10px;
+    border: 5px solid orangered;
+    margin-left: 55px;
   }
 
   .hero-section {
-    padding: 200px 100px;
-    font-size: larger;
+    padding: 220px 150px;
+  }
+
+  .hero-section .welcome {
+    font-size: 28px;
+  }
+
+  .hero-section h1 {
+    font-size: 60px;
+    width: 70%;
   }
 
   .hero-section .intro {
@@ -270,19 +301,25 @@ footer {
   .program ul {
     display: flex;
     padding: 30px;
+    justify-content: center;
   }
 
   .program li {
-    margin: 20px;
+    margin: 2px;
     display: flex;
     flex-direction: column;
-    width: 20%;
+    text-align: center;
+    width: 10%;
   }
 
   .program span {
     display: block;
-    text-align: center;
     font-size: 22px;
+  }
+
+  .program .fa {
+    font-size: 35px;
+    margin: 5px;
   }
 
   .program button {
