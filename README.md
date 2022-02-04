@@ -1,7 +1,7 @@
 # Learn It
 
 The project is an initiative to train users in the development of various skill.
-![page_screenshot](Assets/sneak_peak.JPG)
+![sneak peak of project deployment](Assets/sneak_peak.JPG)
 
 The goal is to build a very interactive and easy-to-follow free tutorial course with mobile app integration
 
@@ -13,7 +13,8 @@ The goal is to build a very interactive and easy-to-follow free tutorial course 
 Libraries such as Bootstrap may be used.
 
 ## Live Demo
-<!-- Link to deployed page will be showed here -->
+[Portfolio web](https://i-max-xi.github.io/Capstone_1/)
+
 
 Quick note: Deployment is rooted to the master branch hence unmerged changes may not show.
 
