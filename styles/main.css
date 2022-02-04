@@ -183,6 +183,10 @@ hr {
   transform: translateY(-10px);
 }
 
+#modal3 {
+  display: none;
+}
+
 /* About page start here */
 
 .info-card {

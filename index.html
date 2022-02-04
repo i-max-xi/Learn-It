@@ -12,7 +12,7 @@
     ></script>
     <title>Learn It</title>
   </head>
-  <body>
+  <body onload="modalDisplay()">
     <div class="menu-space">
       <div class="fa fa-close" id="close_icon"></div>
       <div class="menu_links">
@@ -102,31 +102,11 @@
         <hr />
       </h2>
       <ul>
-        <li class="modal">
-          <img src="./Assets/all3d_logo.jpg" alt="All 3D logo" />
-          <div>
-            <h3>All 3D</h3>
-            <p>
-              The best YT channel to access step by step tutorial on 3D
-              modelling and design. Theirawesome course outline helped achieve
-              the best results for our students.
-            </p>
-          </div>
-        </li>
-        <li class="modal">
-          <div>
-            <img src="./Assets/alison_logo.jpg" alt="Alison Logo" />
-          </div>
-          <div>
-            <h3>Alison</h3>
-            <p>
-              A renowed provider of the world's best free courses. Thus, they
-              really came in handy with course planning and layoutting
-            </p>
-          </div>
-        </li>
+        <li class="modal" id="modal1"></li>
+        <li class="modal" id="modal2"></li>
+        <li class="modal" id="modal3"></li>
       </ul>
-      <button>See More <span class="fa fa-arrow-down"></span></button>
+      <button id="show">See More <span class="fa fa-arrow-down"></span></button>
     </section>
     <footer>
       <div class="footer-logo"><img src="./Assets/logo.jpg" alt="logo" /></div>
