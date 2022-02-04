@@ -1,7 +1,7 @@
 # Learn It
 
 The project is an initiative to train users in the development of various skill.
-<!-- Screenshot of Hero section here -->
+![page_screenshot](Assets/sneak_peak.JPG)
 
 The goal is to build a very interactive and easy-to-follow free tutorial course with mobile app integration
 
