@@ -228,3 +228,87 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
+/* Desktop version  */
+@media (min-width: 900px) {
+  #hamburger {
+    display: none;
+  }
+
+  nav {
+    z-index: 1;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(59, 59, 59, 0.445);
+    position: fixed;
+    width: 100%;
+  }
+
+  .links {
+    transform: translateX(-30px);
+  }
+
+  nav a {
+    margin-right: 25px;
+  }
+
+  .hero-section {
+    padding: 200px 100px;
+    font-size: larger;
+  }
+
+  .hero-section .intro {
+    width: 80%;
+  }
+
+  .hero-section button {
+    font-size: large;
+  }
+
+  .program ul {
+    display: flex;
+    padding: 30px;
+  }
+
+  .program li {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
+
+  .program span {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .program button {
+    width: 30%;
+  }
+
+  .info-card {
+    margin: 80px 300px;
+    width: max-content;
+    height: max-content;
+    line-height: 2;
+  }
+
+  .funds img {
+    width: 50%;
+  }
+
+  .collaborators button {
+    width: 30%;
+  }
+
+  .footer-links a {
+    color: white;
+    margin-top: 8px;
+  }
+  .footer-links span {
+    margin: 5px;
+  }
+}
