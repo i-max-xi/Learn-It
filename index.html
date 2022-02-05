@@ -1,12 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="./styles/main.css" />
+    <script defer src="script/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6a5b34451f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Learn It</title>
+  </head>
+  <body onload="modalDisplay()">
+    <div class="menu-space">
+      <div class="fa fa-close" id="close_icon"></div>
+      <div class="menu_links">
+        <a href="#" class="menu_link"><span class="fa fa-home"></span>Home</a>
+        <a href="#" class="menu_link"
+          ><span class="fa fa-layer-group"></span>Resources</a
+        >
+        <a href="about.html" class="menu_link"
+          ><span class="fa fa-info"></span> About</a
+        >
+        <a href="#" class="menu_link"
+          ><span class="fa fa-rocket"></span>Explore</a
+        >
+      </div>
+    </div>
+    <div class="fa fa-bars" id="hamburger"></div>
+    <nav>
+      <div class="logo"><img src="./Assets/logo.jpg" alt="logo" /></div>
+      <div class="links">
+        <a href="#">Home</a>
+        <a href="#">Resources</a>
+        <a href="about.html">About</a>
+        <a href="#">Explore</a>
+        <div class="support">Support Us</div>
+      </div>
+    </nav>
+    <section class="hero-section">
+      <div class="welcome">
+        Hello, Great Minds!
+        <h1>ACCESS COURSES AT EASE</h1>
+      </div>
+      <div class="intro">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
+        possimus impedit illo facilis reprehenderit unde consequatur
+        perspiciatis fugit amet aliquid maxime facere quis pariatur est ea, aut
+        rerum ipsum blanditiis!
+      </div>
+    </section>
+    <section class="program">
+      <h3>
+        Main Program<br />
+        <hr />
+      </h3>
+      <ul>
+        <li>
+          <div>
+            <span class="fa fa-laptop-code icon"></span>
+            <span class="program-head">Lecture</span>
+          </div>
+          <div>Courses are simplified and flexible for "on-the-go" study.</div>
+        </li>
+
+        <li>
+          <div>
+            <span class="fa fa-archive icon"></span>
+            <span class="program-head">Exhibition</span>
+          </div>
+          <div>Explore some of the works of our students</div>
+        </li>
+
+        <li>
+          <div>
+            <span class="fa fa-comments icon"></span>
+            <span class="program-head">Forum</span>
+          </div>
+          <div>
+            Tune in on our weekly discussion and monthly general assesmbly
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <span class="fa fa-chalkboard icon"></span>
+            <span class="program-head">Workshop</span>
+          </div>
+          <div>
+            Carefully tailored workshop with schedule flexibility and maximum
+            output,
+          </div>
+        </li>
+      </ul>
+      <button>Learn Now</button>
+    </section>
+    <section class="collaborators">
+      <h2>
+        Collaborators<br />
+        <hr />
+      </h2>
+      <ul>
+        <li class="modal" id="modal1"></li>
+        <li class="modal" id="modal2"></li>
+        <li class="modal" id="modal3"></li>
+      </ul>
+      <button id="show">See More <span class="fa fa-arrow-down"></span></button>
+    </section>
+    <footer>
+      <div class="footer-logo"><img src="./Assets/logo.jpg" alt="logo" /></div>
+      <div class="footer-box">
+        <div class="footer-links">
+          <a href="#"><span class="fa fa-home"></span>Home</a>
+          <a href="#"><span class="fa fa-layer-group"></span>Resources</a>
+          <a href="about.html"><span class="fa fa-info"></span> About</a>
+          <a href="#"><span class="fa fa-rocket"></span>Explore</a>
+        </div>
+        <div>
+          2020 &copy;<br />
+          All Rights Reserved
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

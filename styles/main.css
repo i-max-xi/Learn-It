@@ -1,0 +1,355 @@
+body {
+  margin: 0;
+  font-family: "acumin-pro", "Acumin Pro", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+#hamburger {
+  font-size: 30px;
+  color: black;
+  margin: 15px;
+}
+
+nav {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  width: 5%;
+}
+
+.logo img,
+.footer-logo img {
+  width: 100%;
+}
+
+.menu-space {
+  position: fixed;
+  margin: 0;
+  background-color: white;
+  width: 0vw;
+  height: 100vh;
+  color: black;
+  z-index: 1;
+  box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.486);
+  transition: 0.4s ease-out;
+}
+
+#close_icon {
+  padding: 10px;
+  display: none;
+}
+
+.menu_links {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.menu_links span {
+  margin: 5px;
+}
+
+.menu_link {
+  color: black;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.hero-section {
+  padding: 100px 50px;
+  background-image: url(../Assets/bg.jpg);
+  background-size: cover;
+}
+
+.hero-section h1 {
+  background-image: url(../Assets/intro-text-bg.jpg);
+  background-clip: text;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  color: transparent;
+
+}
+
+.welcome {
+  color: orangered;
+}
+
+.welcome h1 {
+  font-weight: 600;
+}
+
+.mail {
+  background-color: orangered;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  padding: 10px;
+}
+
+hr {
+  color: orangered;
+  width: 30%;
+}
+
+.program {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../Assets/program-bg.png);
+  background-blend-mode: multiply;
+  padding: 30px 10px;
+}
+
+.program h3 {
+  align-self: center;
+  color: white;
+}
+
+.program ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.program li {
+  background-image: url(../Assets/pale-black.jpg);
+  padding: 20px;
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: 35% 60%;
+  gap: 10px;
+  color: white;
+  opacity: 0.8;
+}
+
+.program-head {
+  color: orangered;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.program button {
+  width: 65%;
+  color: white;
+  font-size: 18px;
+  align-self: center;
+  padding: 15px;
+  background: orangered;
+  border: none;
+}
+
+.collaborators {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 10px;
+}
+
+.collaborators ul {
+  list-style-type: none;
+  padding: 2px 2px;
+}
+
+.collaborators h2 {
+  align-self: center;
+}
+
+.collaborators button {
+  align-self: center;
+  width: 65%;
+  padding: 10px;
+}
+
+.modal {
+  display: grid;
+  grid-template-columns: 20% auto;
+  gap: 15px;
+  border-bottom: 1px solid black;
+}
+
+.modal img {
+  margin-top: 18px;
+  width: 100%;
+}
+
+.modal p {
+  transform: translateY(-10px);
+}
+
+#modal3 {
+  display: none;
+}
+
+/* About page start here */
+
+.info-card {
+  margin: 5px;
+  border: 1px solid rgba(31, 30, 30, 0.781);
+  border-radius: 3px;
+  border-top: none;
+}
+.card-header {
+  background-color: orangered;
+  color: white;
+  padding: 15px;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.deep {
+  font-weight: 600;
+}
+
+.funds {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 20px;
+}
+
+.funds img {
+  width: 100%;
+}
+
+footer {
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+}
+
+.footer-logo {
+  align-self: center;
+  margin-bottom: 20px;
+  width: 8%;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links a {
+  margin-top: 5px;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Desktop version  */
+@media (min-width: 900px) {
+  #hamburger {
+    display: none;
+  }
+
+  nav {
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(59, 59, 59, 0.445);
+    position: fixed;
+    width: 100%;
+  }
+
+  .logo {
+    transform: translateX(-175px);
+  }
+
+  nav a {
+    margin-right: 50px;
+    color: black;
+  }
+
+  .support {
+    display: inline;
+    padding: 10px;
+    border: 5px solid orangered;
+    margin-left: 55px;
+  }
+
+  .hero-section {
+    padding: 220px 150px;
+  }
+
+  .hero-section .welcome {
+    font-size: 28px;
+  }
+
+  .hero-section h1 {
+    font-size: 60px;
+    width: 70%;
+  }
+
+  .hero-section .intro {
+    width: 80%;
+  }
+
+  .hero-section button {
+    font-size: large;
+  }
+
+  .program ul {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+  }
+
+  .program li {
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 10%;
+  }
+
+  .program span {
+    display: block;
+    font-size: 22px;
+  }
+
+  .program .fa {
+    font-size: 35px;
+    margin: 5px;
+  }
+
+  .program button {
+    width: 30%;
+  }
+
+  .info-card {
+    margin: 80px 300px;
+    width: max-content;
+    height: max-content;
+    line-height: 2;
+  }
+
+  .funds img {
+    width: 50%;
+  }
+
+  .collaborators button {
+    width: 30%;
+  }
+
+  .footer-links a {
+    color: white;
+    margin-top: 8px;
+  }
+  .footer-links span {
+    margin: 5px;
+  }
+}
