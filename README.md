@@ -13,7 +13,7 @@ The goal is to build a very interactive and easy-to-follow free tutorial course 
 Libraries such as Bootstrap may be used.
 
 ## Live Demo
-[Portfolio web](https://i-max-xi.github.io/Capstone_1/)
+[Deployed](https://i-max-xi.github.io/Learn-It/)
 
 
 Quick note: Deployment is rooted to the master branch hence unmerged changes may not show.
