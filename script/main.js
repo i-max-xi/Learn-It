@@ -3,7 +3,7 @@
 // Variables
 const hamburger = document.querySelector("#hamburger");
 const closeBtn = document.querySelector("#close_icon");
-const menu = document.querySelector(".menu-space");
+const menuSpace = document.querySelector(".menu-space");
 const linkSpace = document.querySelector(".menu_links");
 const menuLinks = document.querySelectorAll(".menu_link");
 const seeMore = document.querySelector('#show');
@@ -45,14 +45,14 @@ const modalItems = [
 
 // Functions
 const displayMenu = () => {
-  menu.style.width = "50vw";
+  menuSpace.style.visibility = "visible";
   closeBtn.style.display = "block";
-  linkSpace.style.display = "flex";
+  menuSpace.style.display = "flex";
 };
 const closeMenu = () => {
-  menu.style.width = "0vw";
+  menu.style.visibility = "hidden";
   closeBtn.style.display = "none";
-  linkSpace.style.display = "none";
+  menuSpace.style.display = "none";
 };
 
 // Implementations

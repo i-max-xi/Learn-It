@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  scroll-behavior: smooth;
   font-family: "acumin-pro", "Acumin Pro", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
 }
@@ -31,8 +32,9 @@ a {
   position: fixed;
   margin: 0;
   background-color: white;
-  width: 0vw;
-  height: 100vh;
+  visibility: visible;
+  /* width: 0vw;
+  height: 100vh; */
   color: black;
   z-index: 1;
   box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.486);
@@ -47,7 +49,6 @@ a {
 .menu_links {
   display: flex;
   flex-direction: column;
-  display: none;
 }
 
 .menu_links span {
@@ -74,7 +75,6 @@ a {
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   color: transparent;
-
 }
 
 .welcome {
@@ -127,6 +127,10 @@ hr {
   opacity: 0.8;
 }
 
+.program li:hover {
+  scale: 1.1;
+}
+
 .program-head {
   color: orangered;
 }
@@ -144,6 +148,7 @@ hr {
   padding: 15px;
   background: orangered;
   border: none;
+  border-radius: 5px;
 }
 
 .collaborators {
@@ -265,6 +270,10 @@ footer {
     width: 100%;
   }
 
+  .menu-space {
+    display: none;
+  }
+
   .logo {
     transform: translateX(-175px);
   }
@@ -274,11 +283,14 @@ footer {
     color: black;
   }
 
-  .support {
+  .learn-now {
     display: inline;
     padding: 10px;
-    border: 5px solid orangered;
+    background-color: orangered;
+    color: white;
+    border-radius: 10%;
     margin-left: 55px;
+    box-shadow: 0px 2px 2px 2px rgb(68, 68, 68);
   }
 
   .hero-section {
@@ -327,7 +339,13 @@ footer {
   }
 
   .program button {
-    width: 30%;
+    width: 20%;
+  }
+
+  .program button:hover {
+    transition: 0.1s ease-out;
+    transform: translateY(-5px);
+    box-shadow: 1px 5px 5px 1px rgb(129, 129, 129);
   }
 
   .info-card {
@@ -343,6 +361,11 @@ footer {
 
   .collaborators button {
     width: 30%;
+  }
+
+  .collaborators button:hover {
+    transition: 0.1s ease-out;
+    transform: translateY(-2px);
   }
 
   .footer-links a {
